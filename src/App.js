@@ -1,5 +1,5 @@
 import "./App.css"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 import Home from "./components/home";
 import Codebase from "./components/codebase";
 import Connect from "./components/connect";
@@ -12,7 +12,7 @@ import ProjectDetail from "./components/projectDetail";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter >
     <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,6 +24,6 @@ export default function App() {
         <Route path="/projects/:projectId" element={<ProjectDetail />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter >
   );
 }
