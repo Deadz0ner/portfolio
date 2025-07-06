@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'BitCount';
+  src: url('../assets/fonts/static/BitcountGridDouble-Regular.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: normal;
+}
+ .home-container {
+   display: flex;
+   margin: 0 auto;
+   align-items: center;
+   max-width: 1200px;
+   padding: 0 3rem;
+   height: 100%;
+   position: relative;
+   background-color:#020202 !important;
+ }
+ @media (min-width: 1250px) {
+   .home-container {
+     max-width: 1400px;
+     margin: 0 5rem;
+   }
+ }
+
+ .intro-section,
+ .terminal-window {
+   flex: 1 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ /* .title {
+   display: flex;
+   align-items: center;
+   font-size: 2.5rem;
+   gap: 0.5rem;
+   color: white;
+   text-shadow: 0 2px 12px rgba(79, 84, 251, 0.3);
+   padding: 0;
+  
+   top:0rem;
+   left:3rem;
+
+ } */
+  .name{
+    font-size: 4rem;
+    font-family:BitCount;
+    margin-bottom:0;
+    margin-top:2px;
+
+
+  }
+ .sub-heading {
+   color: #888;
+   font-family: sans-serif;
+   font-size: 1rem;
+   margin-top: 0;
+   margin-bottom: 1rem;
+ }
+ .description {
+   display: flex;
+   line-height: 1.6;
+   color: rgb(136, 136, 136);
+   font-size: 1.25rem;
+    font-family: "QuicksandBold", sans-serif;
+    margin-top:0;
+    padding-top:0;
+ }
+ .contain-fix{
+   position: sticky;
+   top: 450px;
+   left: 3rem;
+   width: 100%;
+   height: 100%;
+ }
+ .japanese-text {
+   color: white;
+   margin-bottom: 1rem;
+   margin-top: 1rem;
+   text-shadow: 0 2px 12px rgba(79, 84, 251, 0.3);
+   white-space: nowrap;
+   text-align: left;
+ }
+ @media (max-width: 600px) {
+   .home-container {
+     margin: 0;
+     padding-top: 0;
+     padding-bottom: 1rem;
+   }
+   .title {
+     left: 1rem;
+     top: 1rem;
+     font-size: 2rem;
+     width: 100%;
+     margin:0;
+     padding: 0;
+   }
+   .description {
+     margin-top: 0rem;
+   }
+   .name{
+     margin-top: 20px;
+   }
+   .japanese-text {
+     margin-top: 1rem;
+     margin-bottom: 0.5rem;
+   }
+   .gs {
+     top: 10% !important;
+   }
+ }
+ .japanese-text span {
+   font-size: 2.5rem;
+   font-weight: 700;
+   font-family: "Noto Sans JP", sans-serif;
+ }
+ 
+ .japanese-text-translation {
+   margin-top: -1rem;
+   font-size: 0.8rem;
+   font-weight: 400;
+   color: #888;
+   text-shadow: none;
+   opacity: 0.7;
+   font-family: "QuicksandBold", sans-serif;
+ }
+
+ .home-buttons {
+   display: flex;
+   margin-top: 0.5rem;
+   gap: 1rem;
+ }
+ .home-btn,
+ .home-btn2 {
+   padding: 1rem 2rem;
+   border-radius: 40px;
+   font-size: 1rem;
+   color: rgb(136, 136, 136);
+   text-decoration: none;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+   box-shadow: grey 0px 0px 0px 2px inset;
+   font-family: "QuicksandBold", sans-serif;
+ }
+ 
+ .terminal-window {
+   flex: 1 1;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   padding-left: 2rem;
+ }
+ 
+ .terminal-window img {
+   width: 70%;
+   object-fit: cover;
+   border-radius: 10px;
+ }
+ @media (max-width: 600px) {
+   .terminal-window {
+     display: none;
+   }
+   .home-container{
+     padding: 1rem;
+   }
+   .title{
+     font-size: 2.5rem;
+     padding-bottom: 0;
+   }
+ }
+

@@ -1,0 +1,46 @@
+/* Reset some default styles */
+@font-face {
+  font-family: 'QuicksandBold';
+  src: url('./assets/fonts/Quicksand-Bold.ttf') format('truetype');
+  font-weight: Medium;
+  font-style: normal;
+}
+html, body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  width: 100%;
+}
+
+
+/* Ensure box-sizing is consistent across all elements */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* Remove default list styles */
+ul, ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set base background & text color */
+body {
+  background-color: #070707; /* was 171717 before*/
+  color: white; /* or your app text color */
+}
+

@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "QuicksandBold";
+  src: url("../assets/fonts/Quicksand-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+.connect-container {
+  display: flex;
+  padding: 2rem 2rem;
+  gap: 2rem;
+  margin: 0rem 4rem;
+  margin-bottom:1rem;
+  background-color: #070707;
+  max-height: calc(100% - var(--navbar-height));
+}
+.left-sxn {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+.right-sxn {
+  flex: 1 1 0;
+  min-width: 0;
+  margin-top: 0;
+}
+.parley {
+  width: auto;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+.parley h1 {
+  font-family: QuicksandBold, sans-serif;
+  color: white;
+  font-size: clamp(1rem, 6vw, 2.2rem); /* Responsive font size */
+  word-break: break-word;
+  white-space: nowrap; /* Prevent line break */
+  overflow: hidden; /* Hide overflow if any */
+  text-overflow: ellipsis; /* Optional: show ... if too small */
+}
+.contact-container {
+  background-color: inherit;
+  color: white;
+  padding: 2rem;
+  min-width: 0;
+  border-radius: 10px;
+  font-family: sans-serif;
+  border: 1px solid #ddd7cc;
+  box-shadow: 0 3px 3px white;
+  transition: transform 0.3s ease;
+  /* height: 100%; */
+  box-sizing: border-box;
+  flex: 1 1 0; /* Take remaining space */
+  display: flex;
+  flex-direction: column;
+}
+.contact-container h1 {
+  font-family: QuicksandBold, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-container:hover {
+  transform: scale(1.02);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 1rem 0 0.3rem;
+  font-weight: bold;
+}
+.contact-form input,
+.contact-form textarea {
+  background-color: inherit;
+  color: #ddd7cc;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: 0.2px solid #ddd7cc;
+  font-size: 1rem;
+  resize: none;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #222;
+}
+.design-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.japanese-elements {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  color: white;
+  padding: 12px 20px;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.japanese-elements p {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-top: 8px;
+}
+
+.geo-shape {
+  position: absolute;
+  top: 10%; /* Adjust as needed */
+  right: 20%; /* Adjust as needed */
+  width: 250px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%;
+  z-index: 1; /* Make sure it's above or below text as you want */
+  pointer-events: none; /* So it doesn't block text selection/clicks */
+}
+
+.code-box {
+  background-color: inherit;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+  border: 1px solid #ddd7cc;
+  color: #d4d4d4;
+  box-shadow: 0 3px 3px white;
+  overflow-x: auto;
+  margin-top: 0;
+  transition: transform 0.3s ease;
+}
+
+.code-box:hover {
+  transform: scale(1.02);
+}
+
+.code-block {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+}
+.socials-section {
+  text-align: left;
+  color: white;
+}
+
+.socials-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.socials-desc {
+  font-size: 1.15rem;
+  color: #bdbdbd;
+  margin-bottom: 1rem;
+  font-size: clamp(1rem, 6vw, 1.2rem); /* Responsive font size */
+  word-break: break-word;
+  white-space: nowrap; /* Prevent line break */
+  overflow: hidden; /* Hide overflow if any */
+  text-overflow: ellipsis; /* Optional: show ... if too small */
+}
+
+.socials-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.social-icon-link {
+  font-size: 2rem;
+  color: #bdbdbd;
+  transition: color 0.2s;
+}
+
+.social-icon-link:hover {
+  color: #fff;
+}
+
+/* Laptop (1024px and above) */
+@media (min-width: 1024px) {
+  /* Styles for laptops and larger screens */
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets like iPad */
+}
+
+/* Phone (below 768px) */
+@media (max-width: 835px) {
+  /* Styles for phones */
+  .connect-container {
+    flex-direction: column;
+    margin: 0 1rem; /* Reduce margin for small screens */
+  }
+  .contact-container {
+    padding: 1rem; /* Reduce padding for small screens */
+  }
+  .parley h1 {
+    font-size: 1.3rem; /* Smaller font for phones */
+  }
+}
