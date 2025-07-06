@@ -6,10 +6,10 @@
 }
 .connect-container {
   display: flex;
-  padding: 2rem 2rem;
+  padding: 0 2rem;
   gap: 2rem;
   margin: 0rem 4rem;
-  margin-bottom:1rem;
+  padding-bottom:1rem;
   background-color: #070707;
   max-height: calc(100% - var(--navbar-height));
 }
