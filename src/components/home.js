@@ -1,5 +1,6 @@
 import "../styles/home.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 // import GeometricShape from "./geometric_shape";
 import startQuestioning from "../assets/start_quest.jpg";
 import { useEffect, useRef } from "react";
@@ -112,12 +113,12 @@ const Home = () => {
             </motion.div>
           </div>
           <motion.div className="home-buttons">
-            <a href="/connect" className="home-btn2">
+            <Link to="/connect" className="home-btn2">
               Say Hello
-            </a>
-            <a href="/resume" className="home-btn">
+            </Link>
+            <Link to="/resume" className="home-btn">
               Resume
-            </a>
+            </Link>
           </motion.div>
         </div>
       </motion.div>
