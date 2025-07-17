@@ -78,22 +78,22 @@ const projects = [
     year: 2023,
   },
   {
-    id: "cloudNotebook",
-    title: "CloudNotebook – Cloud-Based Note-Taking App",
+    id: "multiCoreApiServer",
+    title: "Multi-Core API Server with Queue Management",
     description:
-      "A lightweight, secure, cloud-hosted note-taking application built to explore full-stack development and cloud deployment.",
+      "A production-ready Express API server utilizing Node.js clustering and Redis-based job queues for high-performance, scalable backend services.",
     tags: [
       "Node.js",
       "Express",
+      "Redis",
+      "BullMQ",
       "Docker",
-      "Azure Serverless Functions",
-      "MongoDB Atlas ",
-      "React",
-      "Postman",
+      "Winston",
+      "ioredis",
       "dotenv",
-      "Git",
+      "Docker Compose",
     ],
-    year: 2023,
+    year: 2025,
   },
 ];
 

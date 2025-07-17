@@ -228,91 +228,99 @@ const projects = [
     feedback: "shivanshsagar3@gmail.com",
   },
   {
-  "id": "cloudNotebook",
-  "title": "CloudNotebook – Cloud-Based Note-Taking App",
-  "subtitle": "A lightweight, secure, cloud-hosted note-taking application built to explore full-stack development and cloud deployment.",
-  "description": "CloudNotebook is a simple, scalable, cloud-hosted note-taking application that allows users to create, view, and manage notes securely from anywhere. Built primarily to strengthen backend, Docker, and cloud deployment skills, the project uses Node.js and Express for the REST API, containerization with Docker, and deployment to Azure Serverless Functions. It demonstrates secure API design, DevOps practices, and scalable architecture. A minimal React frontend can also be integrated for full-stack learning.",
-  "techStack": [
-    "Node.js",
-    "Express",
-    "Docker",
-    "Azure Serverless Functions",
-    "MongoDB Atlas",
-    "React",
-    "Postman",
-    "dotenv",
-    "Git"
-  ],
-  github: "https://github.com/Deadz0ner/CloudNotebook",
-  "features": [
-    "User-friendly RESTful API built with Node.js and Express for adding and managing notes.",
-    "Secure, structured API endpoints with scalable architecture.",
-    "Dockerized backend for consistent environment setup and easy portability.",
-    "Deployed using Azure Serverless Functions for cost-efficient, auto-scaling resource management.",
-    "Persistent database integration possible using MongoDB Atlas or Azure Cosmos DB.",
-    "Optional React or Next.js frontend for interactive, full-stack functionality."
-  ],
-  "challenges": [
-    "Learning and implementing secure API design with Express and Node.js.",
-    "Understanding Docker containerization for both development and production environments.",
-    "Deploying to Azure Serverless Functions and configuring cloud resources efficiently.",
-    "Managing environment variables and API keys securely using dotenv.",
-    "Planning database integration for persistent storage with MongoDB Atlas.",
-    "Exploring authentication methods like JWT for secure user access control."
-  ],
-  "learnings": [
-    "Built a scalable, RESTful API from scratch using Node.js and Express.",
-    "Gained hands-on experience with Docker for containerization and deployment consistency.",
-    "Learned to deploy backend services to Azure using Serverless Functions for scalable, pay-per-use architecture.",
-    "Understood the process of securely managing environment variables and secrets.",
-    "Explored integration of persistent cloud databases like MongoDB Atlas for real-world functionality.",
-  ],
-  "feedback": "shivanshsagar3@gmail.com"
-},
-{
-  "id": "blog",
-  "title": "Full-Stack Blog Application",
-  "subtitle": "A secure, scalable blog platform deployed on Azure Virtual Machines with reverse proxy and process management.",
-  "description": "The Blog App is a full-stack web application designed to allow users to create, read, and manage blog posts with secure authentication. The backend is built using Node.js and Express, while the frontend leverages React for a dynamic user experience. The application is deployed on an Azure Virtual Machine with Nginx acting as a reverse proxy for efficient traffic management and PM2 for process monitoring and stability. JWT-based authentication ensures secure user access to protected routes and actions.",
-  "techStack": [
-    "Node.js",
-    "Express",
-    "React",
-    "JWT Authentication",
-    "MongoDB Atlas",
-    "Azure Virtual Machines",
-    "Nginx (Reverse Proxy)",
-    "PM2",
-    "dotenv",
-  ],
-  "features": [
-    "Full-featured blog platform with post creation, editing, and deletion.",
-    "RESTful API built with Node.js and Express for secure, structured data handling.",
-    "Dynamic, responsive frontend using React for seamless user experience.",
-    "JWT-based authentication and authorization to protect user accounts and routes.",
-    "Deployed on Azure VM with Nginx reverse proxy for optimized traffic routing and security.",
-    "PM2 for process management, automatic restarts, and ensuring backend stability."
-  ],
-  "challenges": [
-    "Building a secure, scalable REST API with user authentication and authorization.",
-    "Designing a clean, responsive React frontend integrated with the backend API.",
-    "Setting up an Azure Virtual Machine and configuring secure access.",
-    "Configuring Nginx as a reverse proxy to efficiently route traffic to the application.",
-    "Implementing PM2 for Node.js process management and automatic server restarts.",
-    "Handling environment variables, API keys, and secure deployment on the cloud."
-  ],
-  "learnings": [
-    "Developed a full-stack application with proper separation of backend and frontend responsibilities.",
-    "Gained hands-on experience in JWT authentication for secure user management.",
-    "Learned to deploy and manage a production environment using Azure Virtual Machines.",
-    "Configured and optimized Nginx as a reverse proxy for handling requests securely and efficiently.",
-    "Implemented PM2 for reliable process management and application uptime.",
-    "Strengthened skills in managing real-world cloud deployments, server setup, and application security."
-  ],
-  "feedback": "shivanshsagar3@gmail.com"
-}
+    id: "multiCoreApiServer",
+    title: "Multi-Core API Server with Queue Management",
+    subtitle:
+      "A production-ready Express API server utilizing Node.js clustering and Redis-based job queues for high-performance, scalable backend services.",
+    description:
+      "Multi-Core API Server is a robust, enterprise-grade backend system that demonstrates advanced Node.js architecture patterns including multi-core utilization, asynchronous job processing, and fault-tolerant design. Built to showcase production-ready backend engineering skills, the project uses Node.js clustering to maximize CPU utilization, BullMQ with Redis for reliable job queue management, and implements Dead Letter Queue (DLQ) patterns for handling failed operations. The application is fully containerized with Docker and includes comprehensive logging, graceful shutdown handling, and real-time monitoring capabilities.",
+    techStack: [
+      "Node.js",
+      "Express",
+      "Redis",
+      "BullMQ",
+      "Docker",
+      "Winston",
+      "ioredis",
+      "dotenv",
+      "Docker Compose",
+    ],
+    github: "https://github.com/Deadz0ner/multiCore_Server",
+    features: [
+      "Multi-core scaling using Node.js cluster module to spawn worker processes across all CPU cores for maximum performance.",
+      "Enterprise-grade job queue system with BullMQ and Redis for asynchronous task processing with retry mechanisms.",
+      "Dead Letter Queue (DLQ) implementation for capturing and analyzing permanently failed jobs.",
+      "Structured logging with Winston featuring daily log rotation and multiple output formats.",
+      "Real-time queue statistics and monitoring endpoints for operational visibility.",
+      "Dockerized architecture with Docker Compose for consistent development and deployment.",
+      "Graceful shutdown handling and automatic worker recovery for high availability.",
+      "Production-ready configuration management with environment-based settings.",
+    ],
+    challenges: [
+      "Implementing Node.js clustering to efficiently utilize all CPU cores while maintaining load distribution.",
+      "Designing robust job queue architecture with retry mechanisms and failure handling using BullMQ.",
+      "Creating Dead Letter Queue patterns to prevent infinite retry loops and enable failed job analysis.",
+      "Configuring Redis for optimal performance and persistence in both local and cloud environments.",
+      "Managing inter-process communication between master and worker processes in clustered architecture.",
+      "Implementing comprehensive logging and monitoring for production-ready observability.",
+      "Orchestrating multi-container deployment with Docker Compose for Redis and application services.",
+    ],
+    learnings: [
+      "Mastered Node.js clustering patterns for multi-core scaling and load distribution across worker processes.",
+      "Gained deep understanding of job queue systems, retry mechanisms, and failure handling with BullMQ and Redis.",
+      "Implemented Dead Letter Queue (DLQ) concepts for robust error handling and job failure analysis.",
+      "Developed production-grade logging infrastructure with Winston for structured, rotated logging.",
+      "Learned containerization best practices with Docker and multi-service orchestration using Docker Compose.",
+      "Understood process lifecycle management, graceful shutdowns, and automatic recovery mechanisms.",
+      "Explored Redis configuration, connection pooling, and performance optimization for queue systems.",
+    ],
+    feedback: "shivanshsagar3@gmail.com",
+  },
 
-
+  {
+    id: "blog",
+    title: "Full-Stack Blog Application",
+    subtitle:
+      "A secure, scalable blog platform deployed on Azure Virtual Machines with reverse proxy and process management.",
+    description:
+      "The Blog App is a full-stack web application designed to allow users to create, read, and manage blog posts with secure authentication. The backend is built using Node.js and Express, while the frontend leverages React for a dynamic user experience. The application is deployed on an Azure Virtual Machine with Nginx acting as a reverse proxy for efficient traffic management and PM2 for process monitoring and stability. JWT-based authentication ensures secure user access to protected routes and actions.",
+    techStack: [
+      "Node.js",
+      "Express",
+      "React",
+      "JWT Authentication",
+      "MongoDB Atlas",
+      "Azure Virtual Machines",
+      "Nginx (Reverse Proxy)",
+      "PM2",
+      "dotenv",
+    ],
+    features: [
+      "Full-featured blog platform with post creation, editing, and deletion.",
+      "RESTful API built with Node.js and Express for secure, structured data handling.",
+      "Dynamic, responsive frontend using React for seamless user experience.",
+      "JWT-based authentication and authorization to protect user accounts and routes.",
+      "Deployed on Azure VM with Nginx reverse proxy for optimized traffic routing and security.",
+      "PM2 for process management, automatic restarts, and ensuring backend stability.",
+    ],
+    challenges: [
+      "Building a secure, scalable REST API with user authentication and authorization.",
+      "Designing a clean, responsive React frontend integrated with the backend API.",
+      "Setting up an Azure Virtual Machine and configuring secure access.",
+      "Configuring Nginx as a reverse proxy to efficiently route traffic to the application.",
+      "Implementing PM2 for Node.js process management and automatic server restarts.",
+      "Handling environment variables, API keys, and secure deployment on the cloud.",
+    ],
+    learnings: [
+      "Developed a full-stack application with proper separation of backend and frontend responsibilities.",
+      "Gained hands-on experience in JWT authentication for secure user management.",
+      "Learned to deploy and manage a production environment using Azure Virtual Machines.",
+      "Configured and optimized Nginx as a reverse proxy for handling requests securely and efficiently.",
+      "Implemented PM2 for reliable process management and application uptime.",
+      "Strengthened skills in managing real-world cloud deployments, server setup, and application security.",
+    ],
+    feedback: "shivanshsagar3@gmail.com",
+  },
 ];
 
 const styles = {
