@@ -13,12 +13,12 @@ const ResumeViewer = () => {
     <div className="resume-container fullscreen">
       <div className="resume-frame-wrapper">
         <iframe
-          src="/res.pdf"
+          src={`${process.env.PUBLIC_URL}/res.pdf`}
           title="Resume"
           width="100%"
           height="100%"
           className="resume-iframe"
-          style={{ minHeight: "100vh" }}
+          style={{ minHeight: "100vh", position: "relative", zIndex: 1 }}
         />
       </div>
     </div>
