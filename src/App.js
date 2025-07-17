@@ -18,7 +18,7 @@ export default function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/codebase" element={<Codebase />} />
         {/* <Route path="/me" element={<Me/>} /> */}
-        <Route path="/resume" element={<Resume/>} />
+        {/* <Route path="/resume" element={<Resume/>} /> */}
         <Route path="/journey" element={<Journey/>} />
         <Route path="/connect" element={<Connect />} />
         <Route path="/projects/:projectId" element={<ProjectDetail />} />

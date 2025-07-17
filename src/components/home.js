@@ -78,6 +78,10 @@ const DigitalRain = () => {
 };
 
 const Home = () => {
+  const handleOpenPDF = () => {
+    const pdfPath = `${process.env.PUBLIC_URL}/res.pdf`;
+    window.open(pdfPath, "_blank");
+  };
   return (
     <div className="home-container">
       {/* Left Side */}
@@ -116,9 +120,9 @@ const Home = () => {
             <Link to="/connect" className="home-btn2">
               Say Hello
             </Link>
-            <Link to="/resume" className="home-btn">
+            <button onClick={handleOpenPDF} className="home-btn">
               Resume
-            </Link>
+            </button>
           </motion.div>
         </div>
       </motion.div>
